@@ -44,3 +44,28 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Testing
+Tutorial: https://www.youtube.com/watch?v=KYjjtRgg_H0
+npm test -- --coverage
+
+
+# Docker
+docker-compose.yml
+1. Run enviroment
+    - docker-compose up
+
+Dockerfile
+1. Create a new image
+    docker build -t erickbarcenas/rick_and_morty .
+2. Run enviroment
+    docker run -d -p 3000:3000 erickbarcenas/rick_and_morty
+
+3. Share our image
+    docker push  erickbarcenas/rick_and_morty
+
+Note:
+a) Show all images
+    docker image ls
+
